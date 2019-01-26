@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1162a5bb0450b447b20e5641d2ccbda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MomTalkFlag: {fileID: 11400000, guid: bdda32733b82e9541995ae9cd27bbf3a, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: e7f097c51f87e8341a2294b511648271, type: 2}
 --- !u!1001 &1451792819
 PrefabInstance:
@@ -698,6 +699,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.039236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5478222
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
