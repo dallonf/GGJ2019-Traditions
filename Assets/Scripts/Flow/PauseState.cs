@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PauseState : MonoBehaviour, ISingleton
+public class PauseState : MonoBehaviour, IAutomaticSingleton
 {
   public static PauseState Instance
   {
