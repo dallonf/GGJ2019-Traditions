@@ -11,6 +11,18 @@ public class TextBox : MonoBehaviour
   public Image nextIcon;
   public float CharacterDelay = 0.05f;
 
+  public IEnumerator ShowText(DialogMessage message)
+  {
+    if (System.String.IsNullOrWhiteSpace(message.CharacterName))
+    {
+      return ShowText(message.Text);
+    }
+    else
+    {
+      return ShowText(message.CharacterName + ": " + message.Text);
+    }
+  }
+
   public IEnumerator ShowText(string text)
   {
     nextIcon.enabled = false;

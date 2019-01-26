@@ -16,7 +16,19 @@ public class ChristmasLightSwitchEvent : MonoBehaviour
 
   public IEnumerator EventCoroutine()
   {
-    yield return StartCoroutine(DialogSystem.Instance.ShowText("Mom: Yay you turned on the Christmas tree lights"));
-    yield return StartCoroutine(DialogSystem.Instance.ShowText("Alex: They're pretty"));
+    yield return StartCoroutine(DialogSystem.Instance.ShowText(
+      new DialogMessage
+      {
+        CharacterName = "Mom",
+          Text = "Yay you turned on the Christmas tree lights"
+      }
+    ));
+    yield return StartCoroutine(DialogSystem.Instance.ShowText(
+      new DialogMessage
+      {
+        CharacterName = "Alex",
+          Text = "They're pretty"
+      }
+    ));
   }
 }
