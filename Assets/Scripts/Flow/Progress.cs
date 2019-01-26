@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Progress : MonoBehaviour, ISingleton
+public class Progress : MonoBehaviour, IAutomaticSingleton
 {
   public static Progress Instance
   {
