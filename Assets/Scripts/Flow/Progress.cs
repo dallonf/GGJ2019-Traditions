@@ -11,11 +11,12 @@ public class Progress : MonoBehaviour, IAutomaticSingleton
     }
   }
 
-  public Dictionary<string, int> ProgressFlagState = new Dictionary<string, int>();
+  public Dictionary<string, int> ProgressFlagState;
 
   void Awake()
   {
     DontDestroyOnLoad(gameObject);
+    ProgressFlagState = new Dictionary<string, int>();
   }
 
   public int GetProgressFlagState(ProgressFlag progressFlag)

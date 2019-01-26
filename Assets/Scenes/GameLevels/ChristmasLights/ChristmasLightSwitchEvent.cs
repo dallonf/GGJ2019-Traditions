@@ -3,32 +3,28 @@ using UnityEngine;
 
 public class ChristmasLightSwitchEvent : MonoBehaviour
 {
+  public ProgressFlag MomTalkFlag;
   public ProgressFlag ChristmasLightFlag;
 
   public void TriggerEvent()
   {
-    if (Progress.Instance.GetProgressFlagState(ChristmasLightFlag) < 1)
-    {
-      Progress.Instance.IncrementProgressFlag(ChristmasLightFlag);
-      StartCoroutine(EventCoroutine());
-    }
+    StartCoroutine(EventCoroutine());
+
   }
 
   public IEnumerator EventCoroutine()
   {
-    yield return StartCoroutine(DialogSystem.Instance.ShowText(
-      new DialogMessage
-      {
-        CharacterName = "Mom",
-          Text = "Yay you turned on the Christmas tree lights"
-      }
-    ));
-    yield return StartCoroutine(DialogSystem.Instance.ShowText(
-      new DialogMessage
-      {
-        CharacterName = "Alex",
-          Text = "They're pretty"
-      }
-    ));
+    if (Progress.Instance.GetProgressFlagState(MomTalkFlag) >= 1 &&
+      Progress.Instance.GetProgressFlagState(ChristmasLightFlag) < 1)
+    {
+      Progress.Instance.IncrementProgressFlag(ChristmasLightFlag);
+      yield return StartCoroutine(DialogSystem.Instance.ShowText(
+        new DialogMessage
+        {
+            Text = "* You turned on the lights. Mom is going to be so proud!"
+        }
+      ));
+    }
+
   }
 }
