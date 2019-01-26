@@ -14,6 +14,7 @@ public class PauseState : MonoBehaviour, IAutomaticSingleton
   {
     WALKING,
     PAUSED,
+    TRANSITION,
     DIALOG
   }
 
