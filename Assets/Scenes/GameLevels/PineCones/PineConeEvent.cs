@@ -13,17 +13,18 @@ public class PineConeCollectEvent : MonoBehaviour
 
   public IEnumerator EventCoroutine()
   {
-    /* if (Progress.Instance.GetProgressFlagState(PineConeEventCollectFlag) >= 1 &&
-      Progress.Instance.GetProgressFlagState(ChristmasLightFlag) < 1)
+    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) < 8)
     {
-      Progress.Instance.IncrementProgressFlag(ChristmasLightFlag);
-      yield return StartCoroutine(DialogSystem.Instance.ShowText(
+      Progress.Instance.IncrementProgressFlag (PineConeEventCollectFlag);
+      yield return StartCoroutine (DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-          Text = "* You turned on the lights. Mom is going to be so proud!"
+          Text = "* You got a pinecone *"
         }
       ));
-    }*/
+    }
 
+    Destroy (this.gameObject);
+    yield return null;
   }
 }
