@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 1162154483}
   - component: {fileID: 1162154485}
   - component: {fileID: 1162154484}
+  - component: {fileID: 1162154486}
   m_Layer: 0
   m_Name: ChristmasLightSwitchTrigger
   m_TagString: Untagged
@@ -489,7 +490,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1162154486}
+        m_MethodName: TriggerEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!61 &1162154485
@@ -518,6 +530,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.93, y: 1.22}
   m_EdgeRadius: 0
+--- !u!114 &1162154486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162154482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1162a5bb0450b447b20e5641d2ccbda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChristmasLightFlag: {fileID: 11400000, guid: e7f097c51f87e8341a2294b511648271, type: 2}
 --- !u!1001 &1451792819
 PrefabInstance:
   m_ObjectHideFlags: 0
