@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameLevels/ChristmasLights.unity
     guid: 559abbcf4c19b46498ad835375feaf37
   - enabled: 1
-    path: Assets/Scenes/GameLevels/PineConesEvent.unity
+    path: Assets/Scenes/GameLevels/PineCones/PineConesEvent.unity
     guid: 0c22af2c476e9df4caa81bde00684ae8
   m_configObjects: {}
