@@ -16,6 +16,14 @@ public class TextBox : MonoBehaviour
     nextIcon.enabled = false;
     for (int i = 0; i < text.Length; i++)
     {
+      // try to skip formatting tags
+      // this isn't particularly robust but it should be good enough for now
+      if (text[i] == '<')
+      {
+        var closingBracket = text.IndexOf('>', i);
+        i = closingBracket;
+        continue;
+      }
       textMesh.text = text.Substring(0, i);
       yield return new WaitForSecondsRealtime(CharacterDelay);
     }
