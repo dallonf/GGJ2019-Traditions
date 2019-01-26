@@ -14,26 +14,30 @@ public class LevelTransition : MonoBehaviour
   }
 
   public Image FadeToBlackImage;
+  public bool ShouldFadeIn = true;
   public float FadeDuration = 1;
 
   void Start()
   {
-    PauseState.Instance.CurrentState = PauseState.State.TRANSITION;
-    FadeToBlackImage.gameObject.SetActive(true);
-    FadeToBlackImage.color = Color.black;
-    DOTween
-      .To(
-        () => FadeToBlackImage.color,
-        x => FadeToBlackImage.color = x,
-        new Color(0, 0, 0, 0),
-        FadeDuration
-      )
-      .SetEase(Ease.Linear)
-      .OnComplete(() =>
-      {
-        PauseState.Instance.CurrentState = PauseState.State.WALKING;
-        FadeToBlackImage.gameObject.SetActive(false);
-      });
+    if (ShouldFadeIn)
+    {
+      PauseState.Instance.CurrentState = PauseState.State.TRANSITION;
+      FadeToBlackImage.gameObject.SetActive(true);
+      FadeToBlackImage.color = Color.black;
+      DOTween
+        .To(
+          () => FadeToBlackImage.color,
+          x => FadeToBlackImage.color = x,
+          new Color(0, 0, 0, 0),
+          FadeDuration
+        )
+        .SetEase(Ease.Linear)
+        .OnComplete(() =>
+        {
+          PauseState.Instance.CurrentState = PauseState.State.WALKING;
+          FadeToBlackImage.gameObject.SetActive(false);
+        });
+    }
   }
 
   public void NextLevel(int index)

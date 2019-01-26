@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public void playTheGame()
     {
-        SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Scenes/GameLevels/ChristmasLights"));
+        LevelTransition.Instance.NextLevel("Scenes/GameLevels/ChristmasLights");
     }
 
     public void quitGame()
