@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Progress : MonoBehaviour, IAutomaticSingleton
@@ -10,12 +11,34 @@ public class Progress : MonoBehaviour, IAutomaticSingleton
     }
   }
 
-  public Mission CurrentMission;
-  public int CurrentMissionSteps = 0;
+  public Dictionary<string, int> ProgressFlagState = new Dictionary<string, int>();
 
-  public void SetNewObjective(Mission newMission)
+  void Awake()
   {
-    CurrentMission = newMission;
-    CurrentMissionSteps = 0;
+    DontDestroyOnLoad(gameObject);
+  }
+
+  public int GetProgressFlagState(ProgressFlag progressFlag)
+  {
+    if (ProgressFlagState.ContainsKey(progressFlag.name))
+    {
+      return ProgressFlagState[progressFlag.name];
+    }
+    else
+    {
+      return 0;
+    }
+  }
+
+  public void IncrementProgressFlag(ProgressFlag progressFlag)
+  {
+    if (ProgressFlagState.ContainsKey(progressFlag.name))
+    {
+      ProgressFlagState[progressFlag.name] += 1;
+    }
+    else
+    {
+      ProgressFlagState[progressFlag.name] = 1;
+    }
   }
 }
