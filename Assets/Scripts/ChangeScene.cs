@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public void playTheGame() {
-        SceneManager.LoadScene("ajtahtioahohto");
+        SceneManager.LoadScene("throwaway");
+    }
+
+    public void quitGame() {
+        Debug.Log("I quit");
+        Application.Quit();
     }
 }
