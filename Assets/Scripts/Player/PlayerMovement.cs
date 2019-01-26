@@ -16,9 +16,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
+        if (PauseState.Instance.CurrentState == PauseState.State.WALKING)
+        {
+            var h = Input.GetAxis("Horizontal");
+            var v = Input.GetAxis("Vertical");
 
-        rigidbody2D.velocity = new Vector2(h, v) * Speed;
+            rigidbody2D.velocity = new Vector2(h, v) * Speed;
+        }
+        else
+        {
+            rigidbody2D.velocity = Vector2.zero;
+        }
     }
 }
