@@ -4,6 +4,7 @@ public class YSort : MonoBehaviour
 {
 
   private SpriteRenderer spriteRenderer;
+  public float Offset;
 
   void Awake()
   {
@@ -12,6 +13,6 @@ public class YSort : MonoBehaviour
 
   void Update()
   {
-    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+    transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y + Offset);
   }
 }
