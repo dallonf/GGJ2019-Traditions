@@ -14,26 +14,36 @@ public class LevelTransition : MonoBehaviour
   }
 
   public Image FadeToBlackImage;
+  public AudioSource Music;
+  public bool ShouldFadeIn = true;
   public float FadeDuration = 1;
 
   void Start()
   {
-    PauseState.Instance.CurrentState = PauseState.State.TRANSITION;
-    FadeToBlackImage.gameObject.SetActive(true);
-    FadeToBlackImage.color = Color.black;
-    DOTween
-      .To(
-        () => FadeToBlackImage.color,
-        x => FadeToBlackImage.color = x,
-        new Color(0, 0, 0, 0),
-        FadeDuration
-      )
-      .SetEase(Ease.Linear)
-      .OnComplete(() =>
+    if (ShouldFadeIn)
+    {
+      PauseState.Instance.CurrentState = PauseState.State.TRANSITION;
+      FadeToBlackImage.gameObject.SetActive(true);
+      FadeToBlackImage.color = Color.black;
+      if (Music)
       {
-        PauseState.Instance.CurrentState = PauseState.State.WALKING;
-        FadeToBlackImage.gameObject.SetActive(false);
-      });
+        Music.volume = 0;
+        DOTween.To(() => Music.volume, x => Music.volume = x, 1, FadeDuration);
+      }
+      DOTween
+        .To(
+          () => FadeToBlackImage.color,
+          x => FadeToBlackImage.color = x,
+          new Color(0, 0, 0, 0),
+          FadeDuration
+        )
+        .SetEase(Ease.Linear)
+        .OnComplete(() =>
+        {
+          PauseState.Instance.CurrentState = PauseState.State.WALKING;
+          FadeToBlackImage.gameObject.SetActive(false);
+        });
+    }
   }
 
   public void NextLevel(int index)
@@ -44,6 +54,10 @@ public class LevelTransition : MonoBehaviour
     PauseState.Instance.CurrentState = PauseState.State.TRANSITION;
     FadeToBlackImage.gameObject.SetActive(true);
     FadeToBlackImage.color = new Color(0, 0, 0, 0);
+    if (Music)
+    {
+      DOTween.To(() => Music.volume, x => Music.volume = x, 0, FadeDuration);
+    }
     DOTween
       .To(
         () => FadeToBlackImage.color,
