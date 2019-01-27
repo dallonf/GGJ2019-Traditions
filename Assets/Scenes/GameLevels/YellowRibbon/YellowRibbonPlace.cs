@@ -6,6 +6,7 @@ using UnityEngine;
 public class YellowRibbonPlace : MonoBehaviour
 {
     public SpriteRenderer RibbonSprite;
+    public AudioSource PlaceSound;
 
     public void HandleTrigger()
     {
@@ -15,6 +16,7 @@ public class YellowRibbonPlace : MonoBehaviour
     private IEnumerator _HandleTrigger()
     {
         RibbonSprite.enabled = true;
+        PlaceSound.Play();
         yield return StartCoroutine(DialogSystem.Instance.ShowText(
             new DialogMessage
             {

@@ -7,6 +7,7 @@ public class YellowRibbonPickup : MonoBehaviour
 {
     public ProgressFlag PickupFlag;
     public GameObject ParentToDisable;
+    public AudioSource PickupSound;
 
     public void HandleTrigger()
     {
@@ -17,6 +18,7 @@ public class YellowRibbonPickup : MonoBehaviour
     {
         Progress.Instance.IncrementProgressFlag(PickupFlag);
         ParentToDisable.SetActive(false);
+        PickupSound.Play();
         yield return null;
     }
 }
