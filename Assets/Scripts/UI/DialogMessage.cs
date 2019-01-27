@@ -1,3 +1,4 @@
+[System.Serializable]
 public struct DialogMessage
 {
   public string CharacterName;

@@ -420,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: Speed
-      value: 9
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -720,7 +720,7 @@ PrefabInstance:
     - target: {fileID: 1946360854608960692, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8518359388856428421, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
@@ -971,3 +971,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3011630766c52fa479c4349446d1dff9, type: 3}
+--- !u!1001 &9046442773028048636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9046442773840249116, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_Name
+      value: TV Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.258121
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.4686775
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249112, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: Messages.Array.data[0].Text
+      value: "...the battle for the ocean purifiers continues, with death tolls reaching
+        into the millions. General Tullen states he will not cave to the rebels\u2026"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
