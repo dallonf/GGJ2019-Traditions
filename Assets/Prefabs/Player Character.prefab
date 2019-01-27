@@ -176,4 +176,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d16b8915ab4c249979a6eaa6348abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteRenderer: {fileID: 0}
+  walk1: {fileID: 21300000, guid: 90126765e2ecf20498b7155350b5935e, type: 3}
+  walk2: {fileID: 21300000, guid: fe507aa313c8a3941965a2798018741f, type: 3}
+  idle: {fileID: 21300000, guid: 4061695166e9b8b4fb376bbae99a18f9, type: 3}
   Speed: 3
+  animationSpeed: 0.3
