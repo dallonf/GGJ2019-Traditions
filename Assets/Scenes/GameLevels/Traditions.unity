@@ -584,10 +584,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCharacter: {fileID: 882895408}
   TraditionTriggers:
-  - {fileID: 1991609020}
+  - {fileID: 621031134}
   - {fileID: 1285043909}
   - {fileID: 1173290900}
-  - {fileID: 621031134}
   DistanceToShow: 35
 --- !u!114 &877070829
 MonoBehaviour:
@@ -831,11 +830,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: efa2b04d063e54d429e92511f5af8f8d,
         type: 3}
-    - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: orthographic size
-      value: 23
-      objectReference: {fileID: 0}
     - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_Lens.OrthographicSize
@@ -846,6 +840,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 877070830}
+    - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: orthographic size
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_MinimumOrthoSize
@@ -2386,9 +2385,3 @@ MonoBehaviour:
     Text: We would always put the Christmas tree right here. Your grandfather kept
       it up all year round after I left for boot camp.
   Active: 1
---- !u!4 &1991609020 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 1991609016}
-  m_PrefabAsset: {fileID: 0}
