@@ -320,8 +320,8 @@ PrefabInstance:
     - target: {fileID: 9046442773840249112, guid: 6f17c55c1849ca14db96a868029ea905,
         type: 3}
       propertyPath: Messages.Array.data[0].Text
-      value: '...environmentalists report a sharp decline in wildlife due to continued
-        deforestation along the western border...'
+      value: "...temperatures around the globe have reached critical peaks, Australia
+        and parts of Africa have been deemed uninhabitable\u2026"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
