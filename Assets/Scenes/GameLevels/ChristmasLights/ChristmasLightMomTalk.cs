@@ -38,7 +38,7 @@ public class ChristmasLightMomTalk : MonoBehaviour
                         Text = "We can only leave the lights on for an hour or so. We have to conserve power."
                 }
             ));
-            LevelTransition.Instance.NextLevel("Scenes/GameLevels/PineConesEvent");
+            LevelTransition.Instance.NextLevel("Scenes/GameLevels/PineCones/PineConesEvent");
         }
     }
 }
