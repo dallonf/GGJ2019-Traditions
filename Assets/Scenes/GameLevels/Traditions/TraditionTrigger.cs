@@ -33,7 +33,7 @@ public class TraditionTrigger : MonoBehaviour
                 CharacterName = "Alex",
                     Text = "This is where I grew up, Ava, and I’m going to teach you everything that made it a home. All of our traditions."
             }));
-            LevelTransition.Instance.NextLevel("Scenes/MainMenu");
+            LevelTransition.Instance.NextLevel("Scenes/MainMenu", true);
         }
         else
         {
