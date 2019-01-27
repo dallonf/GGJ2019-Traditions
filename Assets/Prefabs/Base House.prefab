@@ -1,5 +1,68 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &503328176309800809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8383577487089792698}
+  - component: {fileID: 1700989284508920416}
+  m_Layer: 0
+  m_Name: FallbackBounds2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8383577487089792698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503328176309800809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2, y: 49.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6100973332508607882}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1700989284508920416
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503328176309800809}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -26.63203, y: -32.25164}
+  - {x: -34.084106, y: -22.510624}
+  - {x: -33.82443, y: -13.718235}
+  - {x: -32.58262, y: -3.1796188}
+  - {x: -24.02611, y: -2.8682213}
+  - {x: -10.362384, y: -2.7934723}
+  - {x: -4.699353, y: 2.079979}
+  - {x: 5.5392323, y: 3.6651764}
+  - {x: 19.147675, y: 4.9355545}
+  - {x: 28.630259, y: 5.187187}
+  - {x: 32.11083, y: 1.6505508}
+  - {x: 39.295864, y: -10.961975}
+  - {x: 36.830994, y: -19.483322}
+  - {x: 40.180454, y: -25.681728}
+  - {x: 45.006226, y: -27.882282}
+  - {x: 59.893337, y: -28.076786}
 --- !u!1 &897858767350821601
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +330,8 @@ Transform:
   - {fileID: 3034998349020137886}
   - {fileID: 111030489995594849}
   - {fileID: 6216416083049114350}
+  - {fileID: 6052416453509642709}
+  - {fileID: 8383577487089792698}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -765,6 +830,69 @@ Transform:
   m_Father: {fileID: 6100973332508607882}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8931598696533008472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6052416453509642709}
+  - component: {fileID: 6549153975184684615}
+  m_Layer: 0
+  m_Name: FallbackBounds1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6052416453509642709
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931598696533008472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: -64.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6100973332508607882}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &6549153975184684615
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8931598696533008472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -23.173756, y: 46.414955}
+  - {x: -36.349545, y: 43.35559}
+  - {x: -42.81697, y: 31.392124}
+  - {x: -45.375492, y: 17.675076}
+  - {x: -42.19512, y: 8.970196}
+  - {x: -41.455505, y: -0.48605347}
+  - {x: 37.833847, y: 0.014549255}
+  - {x: 42.974174, y: 1.0324326}
+  - {x: 44.326397, y: 9.735214}
+  - {x: 44.936485, y: 16.943237}
+  - {x: 52.36444, y: 21.107513}
+  - {x: 58.66511, y: 33.66606}
+  - {x: 55.63948, y: 44.830585}
+  - {x: 62.76818, y: 51.464195}
+  - {x: 63.82582, y: 69.86337}
+  - {x: 62.669197, y: 86.47383}
 --- !u!1 &8973528878210752076
 GameObject:
   m_ObjectHideFlags: 0
