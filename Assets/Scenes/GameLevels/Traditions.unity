@@ -391,7 +391,7 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.003584
+      value: -6.9903736
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -514,14 +514,32 @@ PrefabInstance:
       propertyPath: Speed
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 23.6
-      objectReference: {fileID: 0}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: b93f06ec91046ef49aa96786aac0872c,
+        type: 3}
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: walk1
+      value: 
+      objectReference: {fileID: 21300000, guid: dacde0c3f55e3894d97ef6c9788f8988,
+        type: 3}
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: walk2
+      value: 
+      objectReference: {fileID: 21300000, guid: efa2b04d063e54d429e92511f5af8f8d,
+        type: 3}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
+      value: 23.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
       value: 23.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -818,11 +836,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1946360854608960692, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8518359388856428421, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
       propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -857,6 +870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 10.661846
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946360854608960692, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8518359388856428421, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3, type: 3}
@@ -1264,7 +1282,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77754245770469f41bc7b73a46ea294e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MAX_DISTANCE: 1.1
+  SpriteRenderer: {fileID: 0}
+  MAX_DISTANCE: 3
+  walk1: {fileID: 21300000, guid: 8d0c3932e882f4e4393ba3995cb58bd2, type: 3}
+  walk2: {fileID: 21300000, guid: f1929fcfd920aea4da36ad9cd4725d66, type: 3}
+  idle: {fileID: 21300000, guid: cdc5c24705d48467f8aae5ddbfb91dfd, type: 3}
+  animationSpeed: 0.3
 --- !u!212 &1910219525
 SpriteRenderer:
   m_ObjectHideFlags: 0
