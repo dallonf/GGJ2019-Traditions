@@ -18,7 +18,7 @@ public class PineConeEvent : MonoBehaviour
       yield return StartCoroutine (DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-          Text = "* You got all the pinecones *"
+          Text = "* You got all the pinecones"
         }
       ));
     }
