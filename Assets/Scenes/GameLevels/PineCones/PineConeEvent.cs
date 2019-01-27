@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PineConeCollectEvent : MonoBehaviour
 {
-  public ProgressFlag PineConeEventTalkFlag;
   public ProgressFlag PineConeEventCollectFlag;
 
   public void TriggerEvent()
