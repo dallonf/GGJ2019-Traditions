@@ -26,7 +26,9 @@ public class PineConeCameraGroup : MonoBehaviour
     foreach (var pineCone in PineCones)
     {
       if (pineCone &&
-        (pineCone.position - PlayerCharacter.position).sqrMagnitude < DistanceToShowPineCone * DistanceToShowPineCone)
+        (VectorMath.Flatten(pineCone.position) -
+          VectorMath.Flatten(PlayerCharacter.position)).sqrMagnitude <
+        DistanceToShowPineCone * DistanceToShowPineCone)
       {
         list.Add(pineCone);
       }

@@ -11,13 +11,21 @@ public class SyncCameraGroup : MonoBehaviour
   public float MaxDistance = 75;
   public Transform[] Targets;
 
+  void Awake()
+  {
+    if (!TargetGroup)
+    {
+      TargetGroup = GetComponent<CinemachineTargetGroup>();
+    }
+  }
+
   void Update()
   {
     // sync the desired list with the current one, fading in new items' weights
     var newTargetList = new List<CinemachineTargetGroup.Target>();
     foreach (var item in Targets)
     {
-      if (IsTooFarAway(item))
+      if (!item || IsTooFarAway(item))
       {
         continue;
       }
@@ -52,6 +60,9 @@ public class SyncCameraGroup : MonoBehaviour
 
   private bool IsTooFarAway(Transform target)
   {
-    return (target.position - PlayerCharacter.position).sqrMagnitude > MaxDistance * MaxDistance;
+    return (
+      VectorMath.Flatten(target.position) -
+      VectorMath.Flatten(PlayerCharacter.position)
+    ).sqrMagnitude > MaxDistance * MaxDistance;
   }
 }
