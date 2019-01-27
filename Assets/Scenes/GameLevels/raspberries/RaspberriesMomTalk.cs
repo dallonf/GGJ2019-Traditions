@@ -36,7 +36,7 @@ public class RaspberriesMomTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Mom",
-                        Text = "It’s just enough to make a pie just like my grandma used to for the Fourth of July. I’m glad we kept that gardens alive by pollinating it by hand."
+                        Text = "It’s just enough to make a pie just like my grandma used to for the Fourth of July. I’m glad we kept the garden alive by pollinating it by hand."
                 }
             ));
             LevelTransition.Instance.NextLevel("Scenes/GameLevels/YellowRibbon");
