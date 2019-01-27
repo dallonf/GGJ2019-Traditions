@@ -68,6 +68,5 @@ public class PlayerMovement : MonoBehaviour
         
        yield return new WaitForSeconds(waitTime);
         animating = false;
-        Debug.Log("animated once");
     }
 }
