@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowerChild : MonoBehaviour
 {
-    public SpriteRenderer SpriteRenderer;
+    SpriteRenderer mysprite;
     public float MAX_DISTANCE = 1.1f;
     private GameObject toFollow;
     public Sprite walk1;
@@ -15,11 +15,8 @@ public class FollowerChild : MonoBehaviour
 
     void Awake()
     {
-       toFollow = GameObject.FindGameObjectsWithTag ("Player") [0];
-        if (!SpriteRenderer)
-        {
-            SpriteRenderer = GetComponent<SpriteRenderer>();
-        }
+        toFollow = GameObject.FindGameObjectsWithTag ("Player") [0];
+        mysprite = gameObject.GetComponent <SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -27,26 +24,33 @@ public class FollowerChild : MonoBehaviour
     {
         Vector3 followSpot = toFollow.transform.position;
         float dist = Vector3.Distance (followSpot, transform.position);
-        if (dist < MAX_DISTANCE)
+        // 0.001f to reduce floating point rounding errors
+        if (dist <= MAX_DISTANCE + 0.001f)
+        {
+            mysprite.sprite = idle;
             return;
-        //moving
+        }
+
+        // moving
         if (!animating)
         {
             StartCoroutine("animate", animationSpeed);
             animating = true;
         }
+
         Vector3 moveDir = (followSpot - transform.position).normalized;
         transform.position += moveDir * (dist - MAX_DISTANCE);
     }
+
     IEnumerator animate(float waitTime)
     {
-        if (SpriteRenderer.sprite == walk1)
+        if (mysprite.sprite == walk1)
         {
-            SpriteRenderer.sprite = walk2;
+            mysprite.sprite = walk2;
         }
         else
         {
-            SpriteRenderer.sprite = walk1;
+            mysprite.sprite = walk1;
         }
 
         yield return new WaitForSeconds(waitTime);
