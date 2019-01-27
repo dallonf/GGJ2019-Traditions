@@ -31,21 +31,23 @@ public class PlayerMovement : MonoBehaviour
             var v = Input.GetAxis("Vertical");
 
             rigidbody2D.velocity = new Vector2(h, v) * Speed;
-            if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f)
+            if (Mathf.Abs(rigidbody2D.velocity.sqrMagnitude) > 0.1f)
             {
-                if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f || Mathf.Abs(rigidbody2D.velocity.y) > 0.1f) {
-                    if (!animating)
-                    {
-                        StartCoroutine("animate", animationSpeed);
-                        animating = true;
-                    }
+                if (!animating)
+                {
+                    StartCoroutine("animate", animationSpeed);
+                    animating = true;
                 }
-                
-                SpriteRenderer.flipX = rigidbody2D.velocity.x > 0;
             }
-            else {
+            else
+            {
                 SpriteRenderer.sprite = idle;
             }
+            if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f)
+            {
+                SpriteRenderer.flipX = rigidbody2D.velocity.x > 0;
+            }
+           
         }
         else
         {
