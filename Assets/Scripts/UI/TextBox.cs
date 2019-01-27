@@ -11,6 +11,8 @@ public class TextBox : MonoBehaviour
   public TextMeshProUGUI nameText;
   public GameObject nameContainer;
   public Image nextIcon;
+  public GameObject CloseSoundPrefab;
+  public AudioSource TextSound;
   public float CharacterDelay = 0.05f;
 
   public IEnumerator ShowText(DialogMessage message)
@@ -23,6 +25,7 @@ public class TextBox : MonoBehaviour
     }
     var text = message.Text;
     nextIcon.enabled = false;
+    TextSound.Play();
     for (int i = 0; i < text.Length; i++)
     {
       // try to skip formatting tags
@@ -38,10 +41,12 @@ public class TextBox : MonoBehaviour
     }
     textMesh.text = text;
     nextIcon.enabled = true;
+    TextSound.Stop();
     while (!Input.anyKeyDown)
     {
       // wait for user to close text box
       yield return null;
     }
+    GameObject.Instantiate(CloseSoundPrefab, Vector3.zero, Quaternion.identity);
   }
 }
