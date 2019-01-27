@@ -345,7 +345,7 @@ MonoBehaviour:
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 1025025978110698302}
   m_ConfineScreenEdges: 1
-  m_Damping: 1
+  m_Damping: 0
 --- !u!1 &1025025978521335053
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,8 +405,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
+  m_XDamping: 2
+  m_YDamping: 2
   m_ZDamping: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
@@ -458,7 +458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025025978976496891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.039236, y: -1.5478222, z: -9999.619}
+  m_LocalPosition: {x: -7.003584, y: -1.5478146, z: -9999.619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2413875186686344232}
@@ -490,7 +490,7 @@ Camera:
   far clip plane: 20000
   field of view: 40
   orthographic: 1
-  orthographic size: 9.83
+  orthographic size: 23.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

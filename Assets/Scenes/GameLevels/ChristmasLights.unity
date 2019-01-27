@@ -275,7 +275,7 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0543976
+      value: -4.2455406
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -388,24 +388,6 @@ PrefabInstance:
       propertyPath: Speed
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: walk1
-      value: 
-      objectReference: {fileID: 21300000, guid: 92c48f1545c74c143b99d6ed7a14fd91,
-        type: 3}
-    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: walk2
-      value: 
-      objectReference: {fileID: 21300000, guid: 4b90cca6bfa180d46b1e1b509f5c38fd,
-        type: 3}
-    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: idle
-      value: 
-      objectReference: {fileID: 21300000, guid: ec0ac72a494e98243b5e6ddd325134dc,
-        type: 3}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
@@ -445,11 +427,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555234, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_ConfineScreenEdges
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4916709107537387808, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -656,6 +633,16 @@ PrefabInstance:
       propertyPath: Messages.Array.data[0].Text
       value: '...grid failures are on the rise as demand increases. Martial law states
         that all electricity be cut off between the hours of...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658924327171394750, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658924327171394750, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
