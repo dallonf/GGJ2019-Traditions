@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class FollowerChild : MonoBehaviour
 {
+    public SpriteRenderer SpriteRenderer;
     public float MAX_DISTANCE = 1.1f;
     private GameObject toFollow;
+    public Sprite walk1;
+    public Sprite walk2;
+    public Sprite idle;
+    bool animating = false;
+    public float animationSpeed = 0.3f;
 
     void Awake()
     {
        toFollow = GameObject.FindGameObjectsWithTag ("Player") [0];
+        if (!SpriteRenderer)
+        {
+            SpriteRenderer = GetComponent<SpriteRenderer>();
+        }
     }
 
     // Update is called once per frame
@@ -19,8 +29,27 @@ public class FollowerChild : MonoBehaviour
         float dist = Vector3.Distance (followSpot, transform.position);
         if (dist < MAX_DISTANCE)
             return;
-
+        //moving
+        if (!animating)
+        {
+            StartCoroutine("animate", animationSpeed);
+            animating = true;
+        }
         Vector3 moveDir = (followSpot - transform.position).normalized;
         transform.position += moveDir * (dist - MAX_DISTANCE);
+    }
+    IEnumerator animate(float waitTime)
+    {
+        if (SpriteRenderer.sprite == walk1)
+        {
+            SpriteRenderer.sprite = walk2;
+        }
+        else
+        {
+            SpriteRenderer.sprite = walk1;
+        }
+
+        yield return new WaitForSeconds(waitTime);
+        animating = false;
     }
 }
