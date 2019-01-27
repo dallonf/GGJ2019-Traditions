@@ -5,7 +5,6 @@ using UnityEngine;
 public class PineConeEventTalk : MonoBehaviour
 {
 
-    public ProgressFlag PineConeEventTalkFlag;
     public ProgressFlag PineConeEventCollectFlag;
 
     public void TriggerEvent()
@@ -15,24 +14,22 @@ public class PineConeEventTalk : MonoBehaviour
 
     public IEnumerator EventCoroutine()
     {
-        if (Progress.Instance.GetProgressFlagState(PineConeEventTalkFlag) == 0)
+        if (Progress.Instance.GetProgressFlagState(PineConeEventCollectFlag) == 0)
         {
             yield return StartCoroutine(DialogSystem.Instance.ShowText(
                 new DialogMessage
                 {
-                    CharacterName = "Mom",
+                    CharacterName = "Dad",
                         Text = "Let’s get the pine cones to make our bird feeders. The squirrels might have hidden some, they're hard to find these days."
                 }
             ));
-
-            Progress.Instance.IncrementProgressFlag(PineConeEventTalkFlag);
         }
         else
         {
             yield return StartCoroutine(DialogSystem.Instance.ShowText(
                 new DialogMessage
                 {
-                    CharacterName = "Mom",
+                    CharacterName = "Dad",
                         Text = "Now we dip the pine cones in suet and cover them with seeds. Maybe the birds will come back this year!"
                 }
             ));
