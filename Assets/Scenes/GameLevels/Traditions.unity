@@ -623,7 +623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126375811
 PrefabInstance:
@@ -839,7 +839,7 @@ Transform:
   m_Children:
   - {fileID: 1910219523}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1285043904
 GameObject:
@@ -972,7 +972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1285043910
 BoxCollider2D:
@@ -1019,6 +1019,81 @@ MonoBehaviour:
       I learned when I was a little older than you are now. These raspberries are
       almost ripe, we\u2019ll pick them soon."
   Active: 1
+--- !u!1001 &1703044595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9046442773840249116, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_Name
+      value: TV Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.26673
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249112, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: Messages.Array.data[0].Text
+      value: "...four decades after the start of the Resource Wars negotiations are
+        finally underway, this after losing nearly sixty percent of the global population\u2026"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
 --- !u!1 &1758028898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1229807137599037540, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
@@ -1293,7 +1368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988834340
 GameObject:
@@ -1424,7 +1499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6.8980002}
 --- !u!1001 &1991609016
 PrefabInstance:
