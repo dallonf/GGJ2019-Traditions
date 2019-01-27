@@ -30,43 +30,43 @@ public class PlayerMovement : MonoBehaviour
             var h = Input.GetAxis("Horizontal");
             var v = Input.GetAxis("Vertical");
 
-            rigidbody2D.velocity = new Vector2(h, v) * Speed;
-            if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f)
+            if (h != 0.0f || v != 0.0f)
             {
-                if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f || Mathf.Abs(rigidbody2D.velocity.y) > 0.1f) {
-                    if (!animating)
-                    {
-                        StartCoroutine("animate", animationSpeed);
-                        animating = true;
-                    }
+                if (!animating)
+                {
+                    StartCoroutine("animate", animationSpeed);
+                    animating = true;
                 }
-                
-                SpriteRenderer.flipX = rigidbody2D.velocity.x > 0;
             }
-            else {
+            else
+            {
                 SpriteRenderer.sprite = idle;
+            }
+
+            rigidbody2D.velocity = new Vector2(h, v) * Speed;
+            if (rigidbody2D.velocity.x != 0.0f)
+            {
+                SpriteRenderer.flipX = rigidbody2D.velocity.x > 0;
             }
         }
         else
         {
-            
             rigidbody2D.velocity = Vector2.zero;
         }
     }
 
     IEnumerator animate(float waitTime)
     {
-        
-            if (SpriteRenderer.sprite == walk1)
-            {
-                SpriteRenderer.sprite = walk2;
-            }
-            else
-            {
-                SpriteRenderer.sprite = walk1;
-            }
-        
-       yield return new WaitForSeconds(waitTime);
+        if (SpriteRenderer.sprite == walk1)
+        {
+            SpriteRenderer.sprite = walk2;
+        }
+        else
+        {
+            SpriteRenderer.sprite = walk1;
+        }
+
+        yield return new WaitForSeconds(waitTime);
         animating = false;
     }
 }
