@@ -10,7 +10,7 @@ public class LevelTransitionTriggerTest : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            LevelTransition.Instance.NextLevel(ScenePath);
+            LevelTransition.Instance.NextLevel(ScenePath, true);
         }
     }
 }

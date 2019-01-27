@@ -46,7 +46,9 @@ public class LevelTransition : MonoBehaviour
     }
   }
 
-  public void NextLevel(int index)
+  // ensureFadeIn makes sure the next scene fades in, even if its
+  // LevelTransition is set to "ShouldFadeIn = false".
+  public void NextLevel(int index, bool ensureFadeIn = false)
   {
     var asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
     asyncLoad.allowSceneActivation = false;
@@ -57,6 +59,17 @@ public class LevelTransition : MonoBehaviour
     if (Music)
     {
       DOTween.To(() => Music.volume, x => Music.volume = x, 0, FadeDuration);
+    }
+    if (ensureFadeIn)
+    {
+      asyncLoad.completed += (operation) =>
+      {
+        var nextLevelTransition = FindObjectOfType<LevelTransition>();
+        if (nextLevelTransition)
+        {
+          nextLevelTransition.ShouldFadeIn = true;
+        }
+      };
     }
     DOTween
       .To(
@@ -72,8 +85,8 @@ public class LevelTransition : MonoBehaviour
       });
   }
 
-  public void NextLevel(string scenePath)
+  public void NextLevel(string scenePath, bool ensureFadeIn = false)
   {
-    NextLevel(SceneUtility.GetBuildIndexByScenePath(scenePath));
+    NextLevel(SceneUtility.GetBuildIndexByScenePath(scenePath), ensureFadeIn);
   }
 }

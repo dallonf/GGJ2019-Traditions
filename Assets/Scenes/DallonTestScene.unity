@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31dc378d36e782b4db228ceb8210c12a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScenePath: Scenes/GameLevels/ChristmasLights
+  ScenePath: Scenes/MainMenu
 --- !u!4 &127313073
 Transform:
   m_ObjectHideFlags: 0
@@ -764,17 +764,22 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.039236
+      value: -16.469208
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5478222
+      value: -0.44957757
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: orthographic size
+      value: 14.8
       objectReference: {fileID: 0}
     - target: {fileID: 6452046285611534796, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
