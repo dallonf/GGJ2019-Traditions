@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameLevels/PineConesEvent.unity
     guid: 0c22af2c476e9df4caa81bde00684ae8
+  - enabled: 1
+    path: Assets/Scenes/GameLevels/raspberries.unity
+    guid: a27a4658148751542a62851346d8ac71
+  - enabled: 1
+    path: Assets/Scenes/GameLevels/Traditions.unity
+    guid: 9f1a98a8b2aa846539daa5c711fc3c0c
   m_configObjects: {}

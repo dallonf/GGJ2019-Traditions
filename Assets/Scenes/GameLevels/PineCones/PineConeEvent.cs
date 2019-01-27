@@ -12,13 +12,13 @@ public class PineConeEvent : MonoBehaviour
 
   public IEnumerator EventCoroutine()
   {
-    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) < 4)
+    Progress.Instance.IncrementProgressFlag (PineConeEventCollectFlag);
+    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) > 3)
     {
-      Progress.Instance.IncrementProgressFlag (PineConeEventCollectFlag);
       yield return StartCoroutine (DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-          Text = "* You got a pinecone *"
+          Text = "* You got all the pinecones *"
         }
       ));
     }
