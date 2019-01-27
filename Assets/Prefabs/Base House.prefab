@@ -792,6 +792,7 @@ Transform:
   - {fileID: 2069631089960330886}
   - {fileID: 4552594876239105978}
   - {fileID: 8084832319249153047}
+  - {fileID: 5213507696727822075}
   m_Father: {fileID: 6100973332508607882}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2529,4 +2530,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8121320032793520331, guid: 80ea899306f43435983c343723d9db10,
     type: 3}
   m_PrefabInstance: {fileID: 8361147197477624893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8828340063494707879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8001110231996289853}
+    m_Modifications:
+    - target: {fileID: 3455396659094929178, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_Name
+      value: Raspberry Bush 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 016e99aa695844a999fd588a93a86067, type: 3}
+--- !u!4 &5213507696727822075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3665517933796889692, guid: 016e99aa695844a999fd588a93a86067,
+    type: 3}
+  m_PrefabInstance: {fileID: 8828340063494707879}
   m_PrefabAsset: {fileID: 0}

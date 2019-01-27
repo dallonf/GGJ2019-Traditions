@@ -331,6 +331,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.60137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5478146
+      objectReference: {fileID: 0}
     - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -450,10 +460,39 @@ PrefabInstance:
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
-      value: 14.8
+      value: 23.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 23.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}
+--- !u!1 &1008366924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2983710642404412678, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1173290898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1008366926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008366924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Messages:
+  - CharacterName: 
+    Text: "I\u2019m surprised this is still here after all this time. Your grandmother
+      would have taken it down if she came back home. Let\u2019s see what else is
+      here."
+  soundEffect: {fileID: 0}
 --- !u!1 &1069347784
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,12 +783,12 @@ PrefabInstance:
     - target: {fileID: 4216471515537467819, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
       propertyPath: m_Offset.x
-      value: -2.1981335
+      value: -1.0402927
       objectReference: {fileID: 0}
     - target: {fileID: 4216471515537467819, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
       propertyPath: m_Size.x
-      value: 12.794971
+      value: 10.47929
       objectReference: {fileID: 0}
     - target: {fileID: 4216471515537467819, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
@@ -815,6 +854,7 @@ GameObject:
   - component: {fileID: 1285043906}
   - component: {fileID: 1285043905}
   - component: {fileID: 1285043910}
+  - component: {fileID: 1285043911}
   m_Layer: 0
   m_Name: raspberry1 (3)
   m_TagString: Untagged
@@ -943,10 +983,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.709154, y: 4.621138}
+  m_Offset: {x: 2.9524345, y: 2.9442716}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -957,8 +997,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.931713, y: 13.002276}
+  m_Size: {x: 14.418274, y: 9.648543}
   m_EdgeRadius: 0
+--- !u!114 &1285043911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285043904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Messages:
+  - CharacterName: 
+    Text: "You know that pie I make that you love so much? It\u2019s the same recipe
+      I learned when I was a little older than you are now. These raspberries are
+      almost ripe, we\u2019ll pick them soon."
+  soundEffect: {fileID: 0}
 --- !u!1 &1758028898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1229807137599037540, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
@@ -975,10 +1033,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 13.599524, y: -5.650405}
+  m_Offset: {x: 12.162226, y: -4.9317503}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -989,8 +1047,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 36.8195, y: 16.420809}
+  m_Size: {x: 27.55685, y: 14.9835}
   m_EdgeRadius: 0
+--- !u!114 &1758028903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758028898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Messages:
+  - CharacterName: 
+    Text: Your grandfather used to send me out to find pine cones like this one to
+      make into bird feeders. I wish I could show you a real songbird, Ava.
+  soundEffect: {fileID: 0}
 --- !u!1 &1910219522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77754245770469f41bc7b73a46ea294e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAX_DISTANCE: 1.1
 --- !u!212 &1910219525
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1384,7 +1460,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.4415245, y: 2.4618278}
+  m_Offset: {x: 0.70222044, y: 2.4618278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.54385966, y: 0.11023622}
@@ -1395,5 +1471,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.84305, y: 10.790807}
+  m_Size: {x: 6.364442, y: 10.790807}
   m_EdgeRadius: 0
+--- !u!114 &1991609019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991609017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Messages:
+  - CharacterName: 
+    Text: We would always put the Christmas tree right here. Your grandfather kept
+      it up all year round after I left for boot camp.
+  soundEffect: {fileID: 0}

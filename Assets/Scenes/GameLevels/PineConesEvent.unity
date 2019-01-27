@@ -320,8 +320,8 @@ PrefabInstance:
     - target: {fileID: 9046442773840249112, guid: 6f17c55c1849ca14db96a868029ea905,
         type: 3}
       propertyPath: Messages.Array.data[0].Text
-      value: '...environmentalists report a sharp decline in wildlife due to continued
-        deforestation along the western border...'
+      value: "...temperatures around the globe have reached critical peaks, Australia
+        and parts of Africa have been deemed uninhabitable\u2026"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
@@ -400,7 +400,7 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.073309
+      value: 12.873308
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -521,7 +521,12 @@ PrefabInstance:
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
-      value: 14.8
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 17.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}

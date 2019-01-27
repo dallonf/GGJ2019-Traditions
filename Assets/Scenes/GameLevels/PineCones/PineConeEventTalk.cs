@@ -20,7 +20,7 @@ public class PineConeEventTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Dad",
-                        Text = "Let’s get the pine cones to make our bird feeders. The squirrels might have hidden some, they're hard to find these days."
+                        Text = "I have a little project for us to do. Why don’t you go out and find some <color=\"red\">pine cones</color>? Look all over for them, they’re getting harder to find now."
                 }
             ));
         }
@@ -30,7 +30,7 @@ public class PineConeEventTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Dad",
-                        Text = "Now we dip the pine cones in suet and cover them with seeds. Maybe the birds will come back this year!"
+                        Text = "Wow, this is more than I expected, this will be great for the birds after we dip them in suet and roll them in bird seed. Hopefully we’ll see a few this year, I haven’t seen any birds since before you were born, Alex."
                 }
             ));
 
