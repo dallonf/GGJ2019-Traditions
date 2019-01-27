@@ -6,9 +6,9 @@ using UnityEngine;
 public class SyncCameraGroup : MonoBehaviour
 {
   public CinemachineTargetGroup TargetGroup;
-  public float WeightFadeRate = 1f;
+  public float WeightFadeRate = 1.5f;
   public Transform PlayerCharacter;
-  public float MaxDistance = 60;
+  public float MaxDistance = 75;
   public Transform[] Targets;
 
   void Update()
