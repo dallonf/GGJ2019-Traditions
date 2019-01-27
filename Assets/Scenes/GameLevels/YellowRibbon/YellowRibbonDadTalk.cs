@@ -30,6 +30,14 @@ public class YellowRibbonDadTalk : MonoBehaviour
                         Text = "The <color=\"red\">ribbon</color> is looking a bit worn out, your Mom’s been deployed six times. Why don’t you do the honors this year, Alex?"
                 }
             ));
+            yield return StartCoroutine(DialogSystem.Instance.ShowText(
+                new DialogMessage
+                {
+                    CharacterName = "Dad",
+                        Text = "Tie the ribbon around the <color=\"red\">front tree</color> so she knows we’re here when she gets home."
+                }
+            ));
+
             if (IncrementFlag)
             {
                 Progress.Instance.IncrementProgressFlag(IncrementFlag);
