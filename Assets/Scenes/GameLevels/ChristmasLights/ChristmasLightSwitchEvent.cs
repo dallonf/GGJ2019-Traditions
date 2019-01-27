@@ -17,6 +17,7 @@ public class ChristmasLightSwitchEvent : MonoBehaviour
     if (Progress.Instance.GetProgressFlagState(MomTalkFlag) >= 1 &&
       Progress.Instance.GetProgressFlagState(ChristmasLightFlag) < 1)
     {
+      GetComponent<AudioSource>().Play();
       Progress.Instance.IncrementProgressFlag(ChristmasLightFlag);
       yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage

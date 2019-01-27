@@ -36,6 +36,7 @@ public class ChristmasLightTVSwitch : MonoBehaviour
   {
     if (Progress.Instance.GetProgressFlagState(MomTalkProgressFlag) >= 1)
     {
+      GetComponent<AudioSource>().Play();
       yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage
         {
