@@ -22,7 +22,7 @@ public class RaspberriesMomTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Mom",
-                        Text = "It’s been harder to find what we need at the market. Alex, could you see if you can find some <color=\"red\">raspberries</color> in the backyard?"
+                        Text = "The markets don’t have any fruits or vegetables anymore. Maybe you can find some <color=\"red\">raspberries</color> in the yard?"
                 }
             ));
             if (Progress.Instance.GetProgressFlagState(MomTalkFlag) == 0)
@@ -36,7 +36,7 @@ public class RaspberriesMomTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Mom",
-                        Text = "I’m glad we have our own victory garden that can provide us with these little treats. It’s not 4th-of-July without pie!"
+                        Text = "It’s just enough to make a pie just like my grandma used to for the Fourth of July. I’m glad we kept that gardens alive by pollinating it by hand."
                 }
             ));
             LevelTransition.Instance.NextLevel("Scenes/GameLevels/YellowRibbon");

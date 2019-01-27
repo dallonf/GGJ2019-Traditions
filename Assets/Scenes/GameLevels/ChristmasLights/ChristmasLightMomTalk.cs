@@ -21,7 +21,7 @@ public class ChristmasLightMomTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Mom",
-                        Text = "All the Christmas lights are hung up. Can you turn on the <color=\"red\">tree</color>, Alex?"
+                        Text = "This place will feel like home before you know it, Alex. Why don’t you turn on the <color=\"red\">tree</color> lights?"
                 }
             ));
             if (Progress.Instance.GetProgressFlagState(MomTalkFlag) == 0)
@@ -35,7 +35,7 @@ public class ChristmasLightMomTalk : MonoBehaviour
                 new DialogMessage
                 {
                     CharacterName = "Mom",
-                        Text = "We can only leave the lights on for an hour or so. We have to conserve power."
+                        Text = "There’s that glow I love, it’s a shame we can only have them on for an hour."
                 }
             ));
             LevelTransition.Instance.NextLevel("Scenes/GameLevels/PineCones/PineConesEvent");

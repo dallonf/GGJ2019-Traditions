@@ -40,7 +40,7 @@ public class ChristmasLightTVSwitch : MonoBehaviour
       yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-          Text = "...conflict escalated over the Thanksgiving holiday between rebel forces along the western border. Citizens are encouraged to limit use of electricity..."
+          Text = "...grid failures are on the rise as demand increases. Marshall law states that all electricity be cut off between the hours of..."
         }
       ));
     }
