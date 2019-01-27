@@ -39,6 +39,7 @@ public class RaspberriesMomTalk : MonoBehaviour
                         Text = "I’m glad we have our own victory garden that can provide us with these little treats. It’s not 4th-of-July without pie!"
                 }
             ));
+            LevelTransition.Instance.NextLevel("Scenes/GameLevels/YellowRibbon");
         }
     }
 }
