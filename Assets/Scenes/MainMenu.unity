@@ -453,7 +453,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Traditionz
+  m_text: Traditions
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -586,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeToBlackImage: {fileID: 1105632458}
+  Music: {fileID: 0}
   ShouldFadeIn: 0
   FadeDuration: 1.5
 --- !u!4 &628499745
@@ -2071,8 +2072,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Isabelle K.\r\nDallon F.\r\nDarrick W.\r\nGarrett H.\r\nSteve R.\r\nFernando
-    V.\r\nSpecial thanks:\r\nGimp https://www.gimp.org/\r\nVisual Studio Code https://code.visualstudio.com/\nSurge
+  m_text: "Dallon F.\r\nDarrick W.\r\nFernando V.\r\nGarrett H.\r\nIsabelle K.\r\nSteve
+    R.\r\n\nSpecial thanks:\r\nGimp https://www.gimp.org/\r\nVisual Studio Code https://code.visualstudio.com/\nSurge
     protector"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2150,11 +2151,11 @@ MonoBehaviour:
     lineCount: 10
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
