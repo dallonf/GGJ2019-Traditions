@@ -38,7 +38,7 @@ public class ChristmasLightMomTalk : MonoBehaviour
                         Text = "There’s that glow I love, it’s a shame we can only have them on for an hour."
                 }
             ));
-            LevelTransition.Instance.NextLevel("Scenes/GameLevels/PineCones/PineConesEvent");
+            LevelTransition.Instance.NextLevel("Scenes/GameLevels/PineConesEvent");
         }
     }
 }
