@@ -250,6 +250,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 919a37c7633fd9a4ca642e339fbb2ea8, type: 3}
+--- !u!1001 &241221601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9046442773840249116, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_Name
+      value: TV Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.258121
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.4686775
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249119, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046442773840249112, guid: 6f17c55c1849ca14db96a868029ea905,
+        type: 3}
+      propertyPath: Messages.Array.data[0].Text
+      value: '...environmentalists report a sharp decline in wildlife due to continued
+        deforestation along the western border...'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f17c55c1849ca14db96a868029ea905, type: 3}
 --- !u!1001 &864611203
 PrefabInstance:
   m_ObjectHideFlags: 0
