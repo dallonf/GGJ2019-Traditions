@@ -4,6 +4,7 @@ using UnityEngine;
 public class PineConeEvent : MonoBehaviour
 {
   public ProgressFlag PineConeEventCollectFlag;
+  public AudioSource pickupSound;
 
   public void TriggerEvent()
   {
@@ -22,6 +23,8 @@ public class PineConeEvent : MonoBehaviour
         }
       ));
     }
+    if (pickupSound)
+      pickupSound.Play();
 
     Destroy (this.gameObject);
     yield return null;

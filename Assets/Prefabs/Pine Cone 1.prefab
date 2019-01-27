@@ -140,3 +140,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PineConeEventCollectFlag: {fileID: 11400000, guid: 3b764d24406efab45bb6951c1f9f086e,
     type: 2}
+  pickupSound: {fileID: 0}
