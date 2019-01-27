@@ -44,7 +44,9 @@ public class SyncCameraGroup : MonoBehaviour
     // and fade out anything that's missing, and remove anything that's too far away
     foreach (var existingTarget in TargetGroup.m_Targets)
     {
-      if (!Targets.Contains(existingTarget.target) && !IsTooFarAway(existingTarget.target))
+      if (existingTarget.target &&
+        !Targets.Contains(existingTarget.target) &&
+        !IsTooFarAway(existingTarget.target))
       {
         var newTarget = existingTarget;
         newTarget.weight -= WeightFadeRate * Time.deltaTime;
