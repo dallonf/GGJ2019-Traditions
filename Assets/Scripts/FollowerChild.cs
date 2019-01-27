@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowerChild : MonoBehaviour
 {
+    public float MAX_DISTANCE = 1.1f;
     private GameObject toFollow;
 
     void Awake()
@@ -12,15 +13,14 @@ public class FollowerChild : MonoBehaviour
     }
 
     // Update is called once per frame
-    private const float MAX_DIST = 1.1f;
     void Update()
     {
         Vector3 followSpot = toFollow.transform.position;
         float dist = Vector3.Distance (followSpot, transform.position);
-        if (dist < MAX_DIST)
+        if (dist < MAX_DISTANCE)
             return;
 
         Vector3 moveDir = (followSpot - transform.position).normalized;
-        transform.position += moveDir * (dist - MAX_DIST);
+        transform.position += moveDir * (dist - MAX_DISTANCE);
     }
 }
