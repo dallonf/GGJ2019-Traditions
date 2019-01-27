@@ -8,7 +8,7 @@ public class SyncCameraGroup : MonoBehaviour
   public CinemachineTargetGroup TargetGroup;
   public float WeightFadeRate = 1.5f;
   public Transform PlayerCharacter;
-  public float MaxDistance = 75;
+  public float MaxDistance = 45;
   public Transform[] Targets;
 
   void Awake()

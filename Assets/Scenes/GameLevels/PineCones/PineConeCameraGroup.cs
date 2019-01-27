@@ -10,6 +10,8 @@ public class PineConeCameraGroup : MonoBehaviour
 
   public Transform PlayerCharacter;
   public Transform[] PineCones;
+  public Transform Dad;
+  public ProgressFlag PineConesFlag;
   public float DistanceToShowPineCone = 35;
   private SyncCameraGroup syncCameraGroup;
 
@@ -23,28 +25,23 @@ public class PineConeCameraGroup : MonoBehaviour
   {
     var list = new List<Transform>();
     list.Add(PlayerCharacter);
-    foreach (var pineCone in PineCones)
+    if (Progress.Instance.GetProgressFlagState(PineConesFlag) >= PineCones.Length)
     {
-      if (pineCone &&
-        (VectorMath.Flatten(pineCone.position) -
-          VectorMath.Flatten(PlayerCharacter.position)).sqrMagnitude <
-        DistanceToShowPineCone * DistanceToShowPineCone)
+      list.Add(Dad);
+    }
+    else
+    {
+      foreach (var pineCone in PineCones)
       {
-        list.Add(pineCone);
+        if (pineCone &&
+          (VectorMath.Flatten(pineCone.position) -
+            VectorMath.Flatten(PlayerCharacter.position)).sqrMagnitude <
+          DistanceToShowPineCone * DistanceToShowPineCone)
+        {
+          list.Add(pineCone);
+        }
       }
     }
-    // if (Progress.Instance.GetProgressFlagState(DadTalkFlag) == 0)
-    // {
-    //   list.Add(Dad);
-    // }
-    // else if (Progress.Instance.GetProgressFlagState(GotRibbonFlag) == 0)
-    // {
-    //   list.Add(RibbonOnTable);
-    // }
-    // else
-    // {
-    //   list.Add(Tree);
-    // }
 
     syncCameraGroup.Targets = list.ToArray();
   }

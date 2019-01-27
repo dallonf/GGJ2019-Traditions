@@ -1275,6 +1275,8 @@ MonoBehaviour:
   - {fileID: 2649184}
   - {fileID: 83132084}
   - {fileID: 1576278657}
+  Dad: {fileID: 892902859}
+  PineConesFlag: {fileID: 11400000, guid: 3b764d24406efab45bb6951c1f9f086e, type: 2}
   DistanceToShowPineCone: 20
 --- !u!114 &2115608274
 MonoBehaviour:
