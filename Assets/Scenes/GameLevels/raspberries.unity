@@ -378,7 +378,6 @@ GameObject:
   - component: {fileID: 324045501}
   - component: {fileID: 324045500}
   - component: {fileID: 324045498}
-  - component: {fileID: 324045497}
   m_Layer: 0
   m_Name: raspberry1 (5)
   m_TagString: Untagged
@@ -386,24 +385,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &324045497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324045496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!114 &324045498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,7 +585,7 @@ GameObject:
   - component: {fileID: 539558332}
   - component: {fileID: 539558331}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &539558332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +685,6 @@ GameObject:
   - component: {fileID: 556535444}
   - component: {fileID: 556535443}
   - component: {fileID: 556535441}
-  - component: {fileID: 556535440}
   m_Layer: 0
   m_Name: raspberry1 (1)
   m_TagString: Untagged
@@ -711,24 +692,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &556535440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556535439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!114 &556535441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -815,9 +778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 685342155}
   - component: {fileID: 685342154}
-  - component: {fileID: 685342153}
   - component: {fileID: 685342156}
-  - component: {fileID: 685342157}
   m_Layer: 0
   m_Name: raspberry1
   m_TagString: Untagged
@@ -825,24 +786,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &685342153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685342152}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01b0aeca24f322745a4ac0192a7b4ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: bdda32733b82e9541995ae9cd27bbf3a,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: e7f097c51f87e8341a2294b511648271,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 277b9b7f25a577b479d9808cc1462f73, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 36cbedf9747543d49a4449ecd8bbe0b3, type: 3}
 --- !u!212 &685342154
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -919,24 +862,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Offset: 0
---- !u!114 &685342157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 685342152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!1001 &869616676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1081,80 +1006,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3011630766c52fa479c4349446d1dff9, type: 3}
---- !u!1001 &1077857178
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4693250969751842268, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_Name
-      value: ChristmasTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842268, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.5150385
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 13.735657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4693250969751842266, guid: 121e00db2f749044d9ab4cb6b011e5ad,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 121e00db2f749044d9ab4cb6b011e5ad, type: 3}
 --- !u!1 &1079657332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,7 +1017,6 @@ GameObject:
   - component: {fileID: 1079657337}
   - component: {fileID: 1079657336}
   - component: {fileID: 1079657334}
-  - component: {fileID: 1079657333}
   m_Layer: 0
   m_Name: raspberry1 (2)
   m_TagString: Untagged
@@ -1174,24 +1024,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1079657333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079657332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!114 &1079657334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,7 +1113,7 @@ GameObject:
   - component: {fileID: 1186913385}
   - component: {fileID: 1186913383}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,6 +1173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &1186913385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1213,6 @@ GameObject:
   - component: {fileID: 1383044992}
   - component: {fileID: 1383044991}
   - component: {fileID: 1383044989}
-  - component: {fileID: 1383044988}
   m_Layer: 0
   m_Name: raspberry1 (3)
   m_TagString: Untagged
@@ -1388,24 +1220,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1383044988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383044987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!114 &1383044989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1495,7 +1309,7 @@ GameObject:
   - component: {fileID: 1466518677}
   - component: {fileID: 1466518676}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1529,6 +1343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &1466518677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1596,7 +1411,7 @@ GameObject:
   - component: {fileID: 1528518888}
   - component: {fileID: 1528518887}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1630,6 +1445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &1528518888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,7 +1513,7 @@ GameObject:
   - component: {fileID: 1568196584}
   - component: {fileID: 1568196583}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1731,6 +1547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &1568196584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,7 +1615,7 @@ GameObject:
   - component: {fileID: 1594781013}
   - component: {fileID: 1594781012}
   m_Layer: 0
-  m_Name: ChristmasTreeSwitchTrigger
+  m_Name: RaspberryTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1832,6 +1649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MomTalkFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf, type: 2}
   ChristmasLightFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572, type: 2}
+  PickupSound: {fileID: 1681884376}
 --- !u!114 &1594781013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1704,133 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
+--- !u!1 &1681884375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1681884377}
+  - component: {fileID: 1681884376}
+  m_Layer: 0
+  m_Name: Item Pickup_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1681884376
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681884375}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ca57fae1a8a77a14098bf4426f600e19, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1681884377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681884375}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.356518, y: 50.69224, z: -0.8203125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1720760695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,7 +1933,6 @@ GameObject:
   - component: {fileID: 2039320886}
   - component: {fileID: 2039320885}
   - component: {fileID: 2039320883}
-  - component: {fileID: 2039320882}
   m_Layer: 0
   m_Name: raspberry1 (4)
   m_TagString: Untagged
@@ -1996,24 +1940,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2039320882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039320881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d6443eedaea86498dd2e1125c51137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MomTalkProgressFlag: {fileID: 11400000, guid: 8827b30c07800364284ea395286b22cf,
-    type: 2}
-  ChristmasLightProgressFlag: {fileID: 11400000, guid: 327688189917b4d4f9f15532b9fc1572,
-    type: 2}
-  SwitchOnSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
-  SwitchOffSprite: {fileID: 21300000, guid: 8478597c89aa0471f8fd5bc63b3a85f9, type: 3}
 --- !u!114 &2039320883
 MonoBehaviour:
   m_ObjectHideFlags: 0
