@@ -295,11 +295,24 @@ PrefabInstance:
       propertyPath: Speed
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 20.8
-      objectReference: {fileID: 0}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: 7dfb6d20697f25b49be104195a51ac04,
+        type: 3}
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: walk1
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d8b4634f5607964281159a46996a592,
+        type: 3}
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: walk2
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f3dda56c73e24944936e2e32de3f9c3,
+        type: 3}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
@@ -364,6 +377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 20.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}
