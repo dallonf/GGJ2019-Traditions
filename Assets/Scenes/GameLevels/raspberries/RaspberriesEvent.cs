@@ -23,7 +23,7 @@ public class RaspberriesEvent : MonoBehaviour
                 yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-            Text = "* You got the raspberries. Mom is going to be so proud!"
+            Text = "* You've found enough raspberries for the pie."
         }
       ));
             }
