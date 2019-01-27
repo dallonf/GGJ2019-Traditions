@@ -14,7 +14,7 @@ public class PineConeEventTalk : MonoBehaviour
 
     public IEnumerator EventCoroutine()
     {
-        if (Progress.Instance.GetProgressFlagState(PineConeEventCollectFlag) == 0)
+        if (Progress.Instance.GetProgressFlagState(PineConeEventCollectFlag) < 4)
         {
             yield return StartCoroutine(DialogSystem.Instance.ShowText(
                 new DialogMessage
@@ -33,6 +33,8 @@ public class PineConeEventTalk : MonoBehaviour
                         Text = "Now we dip the pine cones in suet and cover them with seeds. Maybe the birds will come back this year!"
                 }
             ));
+
+            LevelTransition.Instance.NextLevel("Scenes/GameLevels/raspberries");
         }
     }
 }

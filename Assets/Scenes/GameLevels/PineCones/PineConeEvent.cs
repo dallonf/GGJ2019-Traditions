@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PineConeCollectEvent : MonoBehaviour
+public class PineConeEvent : MonoBehaviour
 {
   public ProgressFlag PineConeEventCollectFlag;
 
@@ -12,7 +12,7 @@ public class PineConeCollectEvent : MonoBehaviour
 
   public IEnumerator EventCoroutine()
   {
-    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) < 8)
+    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) < 4)
     {
       Progress.Instance.IncrementProgressFlag (PineConeEventCollectFlag);
       yield return StartCoroutine (DialogSystem.Instance.ShowText(
