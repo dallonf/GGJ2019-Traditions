@@ -334,28 +334,12 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.60137
+      value: -7.01116
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.5478146
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025977827273546, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b93f06ec91046ef49aa96786aac0872c,
-        type: 3}
-    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: Speed
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978110698302, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -457,14 +441,30 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 118.228775
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+    - target: {fileID: 1025025978351988943, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
-      propertyPath: orthographic size
-      value: 23.6
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025977827273546, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b93f06ec91046ef49aa96786aac0872c,
+        type: 3}
+    - target: {fileID: 1025025977827273399, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: Speed
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_Lens.OrthographicSize
+      value: 23.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: orthographic size
       value: 23.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -475,7 +475,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1173290898}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1008366926
+--- !u!114 &1008366925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,15 +484,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008366924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6f234014d139c449c5a69908dbd7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TraditionsFlag: {fileID: 11400000, guid: 3116cdcc0aa08ea4e8c66cb6c5c5bdca, type: 2}
   Messages:
-  - CharacterName: 
+  - CharacterName: Alex
     Text: "I\u2019m surprised this is still here after all this time. Your grandmother
       would have taken it down if she came back home. Let\u2019s see what else is
       here."
-  soundEffect: {fileID: 0}
+  Active: 1
 --- !u!1 &1069347784
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +719,7 @@ PrefabInstance:
     - target: {fileID: 1280982930413868074, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 1280982930413868074, guid: e4c4c2cd11a2d40fd81ad2933d8b9dc3,
         type: 3}
@@ -1008,15 +1009,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1285043904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6f234014d139c449c5a69908dbd7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TraditionsFlag: {fileID: 11400000, guid: 3116cdcc0aa08ea4e8c66cb6c5c5bdca, type: 2}
   Messages:
-  - CharacterName: 
+  - CharacterName: Alex
     Text: "You know that pie I make that you love so much? It\u2019s the same recipe
       I learned when I was a little older than you are now. These raspberries are
       almost ripe, we\u2019ll pick them soon."
-  soundEffect: {fileID: 0}
+  Active: 1
 --- !u!1 &1758028898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1229807137599037540, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
@@ -1049,7 +1051,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 27.55685, y: 14.9835}
   m_EdgeRadius: 0
---- !u!114 &1758028903
+--- !u!114 &1758028900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1058,14 +1060,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1758028898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6f234014d139c449c5a69908dbd7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TraditionsFlag: {fileID: 11400000, guid: 3116cdcc0aa08ea4e8c66cb6c5c5bdca, type: 2}
   Messages:
-  - CharacterName: 
+  - CharacterName: Alex
     Text: Your grandfather used to send me out to find pine cones like this one to
       make into bird feeders. I wish I could show you a real songbird, Ava.
-  soundEffect: {fileID: 0}
+  Active: 1
 --- !u!1 &1910219522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1238,63 @@ PrefabInstance:
     - {fileID: 1229807137599037538, guid: 919a37c7633fd9a4ca642e339fbb2ea8, type: 3}
     - {fileID: 1229807137599037537, guid: 919a37c7633fd9a4ca642e339fbb2ea8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 919a37c7633fd9a4ca642e339fbb2ea8, type: 3}
+--- !u!1 &1941635035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941635037}
+  - component: {fileID: 1941635036}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1941635036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941635035}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.79, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1941635037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941635035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.23, y: 45.05, z: 0.015625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988834340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,11 +1542,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1991609017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861b1f5fdac737e478a77833b7a51130, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6f234014d139c449c5a69908dbd7ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TraditionsFlag: {fileID: 11400000, guid: 3116cdcc0aa08ea4e8c66cb6c5c5bdca, type: 2}
   Messages:
-  - CharacterName: 
+  - CharacterName: Alex
     Text: We would always put the Christmas tree right here. Your grandfather kept
       it up all year round after I left for boot camp.
-  soundEffect: {fileID: 0}
+  Active: 1
