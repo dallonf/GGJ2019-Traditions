@@ -6,8 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     private new Rigidbody2D rigidbody2D;
     public SpriteRenderer SpriteRenderer;
-
+    public Sprite walk1;
+    public Sprite walk2;
+    public Sprite idle;
     public float Speed;
+    bool animating = false;
+    public float animationSpeed = 0.3f;
 
     private void Awake()
     {
@@ -29,12 +33,40 @@ public class PlayerMovement : MonoBehaviour
             rigidbody2D.velocity = new Vector2(h, v) * Speed;
             if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f)
             {
+                if (Mathf.Abs(rigidbody2D.velocity.x) > 0.1f || Mathf.Abs(rigidbody2D.velocity.y) > 0.1f) {
+                    if (!animating)
+                    {
+                        StartCoroutine("animate", animationSpeed);
+                        animating = true;
+                    }
+                }
+                
                 SpriteRenderer.flipX = rigidbody2D.velocity.x > 0;
+            }
+            else {
+                SpriteRenderer.sprite = idle;
             }
         }
         else
         {
+            
             rigidbody2D.velocity = Vector2.zero;
         }
+    }
+
+    IEnumerator animate(float waitTime)
+    {
+        
+            if (SpriteRenderer.sprite == walk1)
+            {
+                SpriteRenderer.sprite = walk2;
+            }
+            else
+            {
+                SpriteRenderer.sprite = walk1;
+            }
+        
+       yield return new WaitForSeconds(waitTime);
+        animating = false;
     }
 }
