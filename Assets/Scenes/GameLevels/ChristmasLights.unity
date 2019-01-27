@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 107466787}
   - component: {fileID: 107466786}
+  - component: {fileID: 107466788}
   m_Layer: 0
   m_Name: Sliding door Right Static
   m_TagString: Untagged
@@ -191,6 +192,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107466788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107466785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8d786e500a95d4c936691c1daeabc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: 0
 --- !u!1001 &135493052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -261,7 +275,7 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.2455406
+      value: -4.0490685
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -1168,6 +1182,7 @@ GameObject:
   - component: {fileID: 883611410}
   - component: {fileID: 883611409}
   - component: {fileID: 883611408}
+  - component: {fileID: 883611411}
   m_Layer: 0
   m_Name: Sliding door Left
   m_TagString: Untagged
@@ -1263,6 +1278,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883611411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883611407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8d786e500a95d4c936691c1daeabc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Offset: 0
 --- !u!1001 &1077857178
 PrefabInstance:
   m_ObjectHideFlags: 0
