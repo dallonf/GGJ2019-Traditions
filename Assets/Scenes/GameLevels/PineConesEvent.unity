@@ -253,6 +253,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.687
       objectReference: {fileID: 0}
+    - target: {fileID: 1229807137599037536, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1585128507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229807137599037536, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1229807137599037539, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
         type: 3}
       propertyPath: pickupSound

@@ -13,20 +13,20 @@ public class PineConeEvent : MonoBehaviour
 
   public IEnumerator EventCoroutine()
   {
-    Progress.Instance.IncrementProgressFlag (PineConeEventCollectFlag);
-    if (Progress.Instance.GetProgressFlagState (PineConeEventCollectFlag) > 3)
+    Progress.Instance.IncrementProgressFlag(PineConeEventCollectFlag);
+    if (pickupSound)
+      pickupSound.Play();
+    if (Progress.Instance.GetProgressFlagState(PineConeEventCollectFlag) > 3)
     {
-      yield return StartCoroutine (DialogSystem.Instance.ShowText(
+      yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage
         {
           Text = "* You got all the pinecones"
         }
       ));
     }
-    if (pickupSound)
-      pickupSound.Play();
 
-    Destroy (this.gameObject);
+    Destroy(this.gameObject);
     yield return null;
   }
 }
