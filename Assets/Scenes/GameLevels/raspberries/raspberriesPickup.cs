@@ -39,7 +39,7 @@ public class raspberriesPickup : MonoBehaviour
       yield return StartCoroutine(DialogSystem.Instance.ShowText(
         new DialogMessage
         {
-          Text = "...rationing of fruits and vegetables is expected to continue through the summer months…"
+          Text = "...the agricultural industry is suffering through yet another mutated version of the disease dickeya dianthicola as it spreads from..."
         }
       ));
     }
