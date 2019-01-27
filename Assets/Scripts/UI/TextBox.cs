@@ -8,23 +8,20 @@ public class TextBox : MonoBehaviour
 {
 
   public TextMeshProUGUI textMesh;
+  public TextMeshProUGUI nameText;
+  public GameObject nameContainer;
   public Image nextIcon;
   public float CharacterDelay = 0.05f;
 
   public IEnumerator ShowText(DialogMessage message)
   {
-    if (System.String.IsNullOrWhiteSpace(message.CharacterName))
+    bool hasName = !System.String.IsNullOrWhiteSpace(message.CharacterName);
+    nameContainer.SetActive(hasName);
+    if (hasName)
     {
-      return ShowText(message.Text);
+      nameText.text = message.CharacterName;
     }
-    else
-    {
-      return ShowText(message.CharacterName + ": " + message.Text);
-    }
-  }
-
-  public IEnumerator ShowText(string text)
-  {
+    var text = message.Text;
     nextIcon.enabled = false;
     for (int i = 0; i < text.Length; i++)
     {
