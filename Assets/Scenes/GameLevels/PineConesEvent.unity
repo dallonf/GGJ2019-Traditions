@@ -259,11 +259,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 18.687
       objectReference: {fileID: 0}
-    - target: {fileID: 1229807137599037539, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
-        type: 3}
-      propertyPath: pickupSound
-      value: 
-      objectReference: {fileID: 1854307664}
     - target: {fileID: 1229807137599037536, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -274,6 +269,11 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 1229807137599037539, guid: 919a37c7633fd9a4ca642e339fbb2ea8,
+        type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 1854307664}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 919a37c7633fd9a4ca642e339fbb2ea8, type: 3}
 --- !u!4 &83132084 stripped
@@ -612,12 +612,12 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.045511
+      value: -7.039236
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.273309
+      value: 12.273308
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978110698302, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -753,6 +753,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: fe507aa313c8a3941965a2798018741f,
         type: 3}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 2115608276}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
@@ -768,26 +778,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.5478222
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 17.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 2115608276}
-    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_MinimumOrthoSize
-      value: 17
-      objectReference: {fileID: 0}
     - target: {fileID: 7197805431114174800, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0bdbc17dd67c859499c5fb5a616323da, type: 3}
+    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_MinimumOrthoSize
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}
 --- !u!4 &864611204 stripped
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   TargetGroup: {fileID: 2115608275}
   WeightFadeRate: 1.5
   PlayerCharacter: {fileID: 864611204}
-  MaxDistance: 45
+  MaxDistance: 35
   Targets: []
 --- !u!114 &2115608275
 MonoBehaviour:
