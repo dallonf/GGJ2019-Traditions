@@ -392,12 +392,12 @@ PrefabInstance:
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0810413
+      value: -2.5915546
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.988799
+      value: 4.9887915
       objectReference: {fileID: 0}
     - target: {fileID: 1025025978976496868, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -538,16 +538,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: efa2b04d063e54d429e92511f5af8f8d,
         type: 3}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 23.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 659736772}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
@@ -563,6 +553,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 4.988799
       objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 23.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 659736772}
     - target: {fileID: 1025025978976496871, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_ShowCameraFrustum
@@ -578,6 +578,11 @@ PrefabInstance:
       propertyPath: m_MaximumOrthoSize
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 7197805431114174800, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 80a32d5d9551ee245a01caa64d9fc3c6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}
 --- !u!1 &477377517 stripped

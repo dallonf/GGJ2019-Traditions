@@ -313,16 +313,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3f3dda56c73e24944936e2e32de3f9c3,
         type: 3}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 20.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 1136939791}
     - target: {fileID: 1025025978976496869, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: orthographic size
@@ -368,25 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1025025978396555234, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_ConfineScreenEdges
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4916709107537387808, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_MinimumOrthoSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
-        type: 3}
-      propertyPath: m_MaximumOrthoSize
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1025025977662736717, guid: 31fd5cfd0295dc044beb3d3e867335dc,
         type: 3}
@@ -398,6 +373,36 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 20.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978396555232, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 1136939791}
+    - target: {fileID: 1025025978396555234, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_ConfineScreenEdges
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_MinimumOrthoSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025025978521335055, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_MaximumOrthoSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7197805431114174800, guid: 31fd5cfd0295dc044beb3d3e867335dc,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d5ea3510ac1ee41469ddcb22b094d962, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fd5cfd0295dc044beb3d3e867335dc, type: 3}
 --- !u!4 &135493053 stripped
